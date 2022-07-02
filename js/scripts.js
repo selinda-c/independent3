@@ -2,17 +2,17 @@
 function count(userInput){
   let numberArray = []
   for (let index = 0; index <= userInput; index ++){
-    if (userInput[index].includes(3)){
-      numberArray.push("Won't you be my neighbor?")
-    } else if (userInput[index].includes(2)) {
-      numberArray.push("boop")
-    } else if (userInput[index].includes(1)){
-      numberArray.push("beep")
+    if (index.toString().includes(3)){
+      numberArray.push("Won't you be my neighbor?");
+    } else if (index.toString().includes(2)) {
+      numberArray.push("boop");
+    } else if (index.toString().includes(1)){
+      numberArray.push("beep");
     } else {
-      numberArray.push(userInput[index])
+      numberArray.push(index);
     }
-  }
-  return numberArray
+  };
+  return numberArray;
 }
 window.addEventListener("load", function(){
   let form = document.querySelector("form")
