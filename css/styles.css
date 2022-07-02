@@ -9,15 +9,39 @@ body {
   background-color: rgb(211, 184, 184);
 }
 
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  background-color: #5e7d9c;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
 .info {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #93b5d7;
-  border-radius: 0.3rem;
+  border-radius: 0.7rem;
+}
+
+.form {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #a1c7ed;
+  border-radius: 0.7rem;
 }
 .result {
   color: #0b1721;
-  background-color: #93b5d7a6;
+  background-color: #c1d1e3;
+  border-radius: 0.7rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn-dark {
