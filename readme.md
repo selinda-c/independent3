@@ -49,15 +49,15 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE._
+SOFTWARE.
 
 # TDD: 
-describe count()
-test: "it should return an array of numbers  based on the user inputted number"
-code: 
-const input = 5
-count(input);
-expected output: [1, 2, 3, 4, 5]
+describe count()  
+test: "it should return an array of numbers  based on the user inputted number"  
+code:  
+const input = 5  
+count(input);  
+expected output: [1, 2, 3, 4, 5]  
 
 test: "it should return "beep" if a user inputs a number that includes 1"
 code: 
