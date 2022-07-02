@@ -11,15 +11,21 @@
     <div class="jumbotron">
       <h1>Hello! Welcome to my Neighborhood!</h1>
     </div>
-    <div class="form">
+    <div class="info">
       <p>We have a special way to count in this Neighborhood.</p>
       <p>Would you like to see how it is done? I'm happy to show you!</p>
-      <p>Input a number below:</p>
-      <input type="text" placeholder="any number">
-      <br><br>
-      <button class="btn-dark" type="submit">Show me!</button>
     </div>
-    <div class="result" id="results"></div>
+    <div class="form">
+      <p>Input a number greater than 0 below:</p>
+      <form>
+        <input type="number" placeholder="any number over 0">
+        <br><br>
+        <button class="btn-dark" type="submit">Show me!</button>
+      </form>
+    </div>
+    <div class="result" id="results">
+      <p id="output"></p>
+    </div>
   </div>
 </body>
 </html>
