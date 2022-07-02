@@ -12,7 +12,7 @@ function count(userInput){
       numberArray.push(index);
     }
   };
-  return numberArray;
+  return numberArray.join(", ");
 }
 
 // UI 
@@ -21,8 +21,10 @@ window.addEventListener("load", function(){
   form.addEventListener("submit", function(event){
     event.preventDefault();
     const userInput = document.querySelector("input").value;
-    const input = parseInt(userInput);
     const output = document.getElementById("output")
     output.append(count(userInput));
   });
+  resetBtn.addEventListener("click", function(){
+    output.innerText = null;
+  })
 });
