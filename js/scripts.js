@@ -1,4 +1,4 @@
-// business logic
+// utility
 function count(userInput){
   let numberArray = []
   for (let index = 0; index <= userInput; index ++){
@@ -14,13 +14,15 @@ function count(userInput){
   };
   return numberArray;
 }
+
+// UI 
 window.addEventListener("load", function(){
   let form = document.querySelector("form")
   form.addEventListener("submit", function(event){
     event.preventDefault();
     const userInput = document.querySelector("input").value;
     const input = parseInt(userInput);
-    console.log(count(input));
+    const output = document.getElementById("output")
+    output.append(count(userInput));
   });
 });
-// UI logic
